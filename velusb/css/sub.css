@@ -1,0 +1,259 @@
+#wrap {
+    width: 100%;
+    min-width: 1200px;
+    position: relative;
+    overflow: hidden;
+}
+/* 반응형에서는 웹 쓰면 안됨 */
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+h2
+{color: black;margin-bottom: 30px;font-size: 1.5rem;}
+/*********************#topimg*********************/
+#topimg {margin-bottom: 30px;}
+#topimg {background-color: red;}
+#topimg img
+{width: 100%;
+    display: block;
+    position: relative;
+}
+#topimg .toppbox
+{width: 500px; height: 500px;background-color: rgba(207, 105, 147, 1);position: absolute;right: 0px;top: 0px;position: absolute;
+left: 5%;
+top: 7%;
+color: white;}
+
+#topimg .subtoppont
+{width: 67%;height: 67%;transform: translate(4px, 30px);}
+#topimg .toppbox .topp
+{position: absolute;top:30%;font-size: 1.6rem;left: 10%;top: 10%;}
+
+
+#topimg .littlep
+{font-size: 0.7rem;}
+
+
+/*********************#topimg*********************/
+
+
+/*********************#hd*********************/
+#hd {margin-bottom: 10px;position: relative;height: 100px;}
+#hd ::after{content: '';display: block; clear: both;}
+#hd h1 {float: left;transform: translate(0,10px)}
+#hd .log {float: right;transform: translate(0,-75px);}
+
+#nav4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 20px 0 20px 0;
+}
+#nav4 .depth1 > li {
+    float: left;
+    width: 20%;
+    background-color: #fff;
+    
+}
+
+/* #nav4 .depth1 > li .velusbs {color: red;} */
+
+
+
+
+
+#nav4 .depth1 > li > a {
+    position: relative;
+    display: block;
+    text-align: center;
+    /* background-color: #fed03a; */
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 15px 0;
+    line-height: 1em;
+    
+}
+
+/* 밑줄효과 */
+.depth1 .top:after {
+    right: 75px;
+    bottom: -3px;
+    position: absolute;
+    display:block;
+    width:90px;               
+    content: '';
+    border-bottom: solid 7px red;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out; 
+ }
+ .depth1 a:hover:after {
+    transform: scaleX(1);
+ }
+/* 밑줄효과 */
+
+
+
+
+
+
+
+
+
+
+
+#nav4 .depth1 .nav_box {
+    display: block;
+    width: 100%;
+    position: absolute;
+    background-color: #754485;
+    left: 0;
+    top: calc(1.1rem + 52px);
+    padding-bottom: 30px;
+    font-size: 0.9rem;
+    line-height: 2em;
+    box-sizing: border-box;
+    padding: 0 10px;
+    z-index: 96;
+}
+#nav4 .depth1 .depth2 {
+    width: 980px;
+    margin: 0 auto;
+    position: relative;
+    display: none;
+    background: #754485;
+}
+
+
+
+
+
+#nav4 .depth2 > li:hover{
+text-decoration: underline;
+}
+
+
+
+
+
+
+
+#nav4 .depth1 > li .depth2 {
+    transition: 1s;
+}
+#nav4 .depth1 > li:hover .depth2 {
+    display: block;
+}
+/* #nav4 .depth1 .depth2:before {
+    content: '';
+    display: block;
+    height: 30px; 
+} */
+
+#nav4 .depth1 .depth2 > li {
+    float: left;
+    width: 20%;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    color: #fff;
+}
+#nav4 .depth2 ul {
+    font-size: 0.8rem;
+    line-height: 1.3em;
+}
+
+
+#nav4 .depth2 > li:nth-child(1)::before,
+#nav4 .depth2 > li:nth-child(2)::after,
+#nav4 .depth2 > li:nth-child(2)::before,
+#nav4 .depth2 > li:nth-child(4):after,
+#nav4 .depth2 > li:nth-child(4):before,
+#nav4 .depth2 > li:nth-child(5)::after {
+    content: '';
+    display: block;
+    /* border-left: 1px solid #ccc; */
+    position: absolute;
+    height: 100%;
+    top: -1px;
+    z-index: 100;
+}
+#nav4 .depth2 > li:nth-child(1)::before {
+    left: 0;
+}
+#nav4 .depth2 > li:nth-child(2)::before {
+    left: 20%;
+}
+#nav4 .depth2 > li:nth-child(2)::after {
+    left: 40%;
+}
+#nav4 .depth2 > li:nth-child(4)::before {
+    left: 60%;
+}
+#nav4 .depth2 > li:nth-child(4)::after {
+    left: 80%;
+}
+#nav4 .depth2 > li:nth-child(5)::after {
+    left: calc(100% - 1px);
+}
+
+
+
+
+/*********************#mininav*********************/
+#mininav {border-top: 2px solid #754485;margin-bottom: 100px;}
+#mininav ul {float: right; margin-top: 5px;}
+#mininav ul li {float: left;}
+#mininav .home {background-image: url(../images/home2.png);width: 50px;height: 50px;
+background-size: 40%;
+background-repeat: no-repeat;
+background-color: transparent;
+transform: translate(30px,1px);}
+#mininav .direction {padding-right: 10px;padding-left: 10px;}
+#mininav .main {color: #b9b7b7;}
+#mininav .now {color:#754485;font-weight: 700;}
+ 
+
+/*********************#sub1*********************/
+
+#sub1 .inner
+{margin-bottom: 60px;}
+#sub1 .inner p {padding-bottom: 15px;letter-spacing: -1px;word-spacing: 2px;font-size: 16px;}
+#sub1 h2 {border-bottom: 1px dotted black;}
+/*********************#sub2*********************/
+#sub2 .sub2_right p {padding-bottom: 15px;letter-spacing: -1px;word-spacing: 2px;font-size: 16px;}
+#sub2::after {content: '';display: block;clear: both;}
+#sub2 .sub2_left
+{float: left;}
+#sub2 .sub2_right
+{float: left;margin-left: 40px;}
+#sub2 .sub2_right img
+{width: 500px; margin-bottom: 40px;}
+
+
+/*********************#sub3*********************/
+#sub3 .inner {margin-bottom: 30px;}
+#sub3 h2 {margin-top: 60px; margin-bottom: 40px;}
+#sub3 .map
+{position: relative;}
+#sub3 a
+{position: absolute; left: calc(50% - 35px);top: calc(50% - 35px);
+display: block;}
+#sub3 .bg
+{width: 500px; height: 200px;background-color: rgba(255, 255, 255, 0.9);position: absolute;right: 0px;top: 0px;}
+#sub3 .bg img
+{margin: 35px 50px;}
+/*********************#foot*********************/
+#foot
+{height: 166px;background-color: #754486; color: #fff;}
+#foot .inner
+{padding-top: 25px;}
+#foot .foot_p1 {margin-bottom: 20px;font-size: 1.3rem;font-weight: bold;}
+#foot .foot_left {float: left;width:1000px;}
+#foot a:nth-child(2)
+{margin-left: 30px;}
+
+#foot .logo {float: right; width:200px }
+
+/*********************쿼리디자인****************************/
+
