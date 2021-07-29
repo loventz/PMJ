@@ -30,6 +30,12 @@ a {
 .projects {
   color: var(--purple-brown);
 }
+.find-me{
+color: var(#E8E4D2)
+}
+
+.bio{
+  color: #eeaba7}
 
 .bg:after {
   content: "";
@@ -60,7 +66,7 @@ a {
 
 .find-me,
 .link-find-me {
-  background: var(--dark-peach);
+  background: #eeaba7;
 }
 
 .transition {
@@ -89,7 +95,7 @@ a {
 
 .transition-find-me {
   left: 15rem;
-  background: var(--dark-peach);
+  background: #eeaba7;
 }
 
 .bio .transition-bio,
@@ -228,6 +234,10 @@ nav a {
 }
 nav .link-projects {
   color: var(--purple-brown);
+  
+}
+nav .link-projects:hover {
+  color: #E26961;
 }
 
 main {

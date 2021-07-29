@@ -626,6 +626,8 @@ progress {
     max-width: 960px;
   }
 }
+
+
 @media (min-width: 1200px) {
   .container-xl, .container-lg, .container-md, .container-sm, .container {
     max-width: 1140px;
@@ -5169,9 +5171,12 @@ textarea.form-control-lg {
   opacity: 0.5;
   position: fixed;
   z-index: 999999;
-  right: 22%;
-  top: 5%;
+  right:calc((100% - 1140px)/2 + 20px) ;
+  top: 0%;
 }
+
+
+
 .btn-close:hover {
   color: #000;
   text-decoration: none;
@@ -5372,6 +5377,12 @@ textarea.form-control-lg {
     max-width: 500px;
     margin: 1.75rem auto;
   }
+  /* 570엑스연습 */
+  
+  .btn-close {right:calc((100% - 500px)/2 + 20px) ;top: 5%;}
+  
+  /* 570엑스연습 */
+
 
   .modal-dialog-scrollable {
     height: calc(100% - 3.5rem);
@@ -5390,6 +5401,8 @@ textarea.form-control-lg {
 .modal-xl {
     max-width: 800px;
   }
+  .btn-close {right:calc((100% - 800px)/2 + 20px) ;top: 5%;}
+
 }
 @media (min-width: 1200px) {
   .modal-xl {
@@ -6257,6 +6270,8 @@ textarea.form-control-lg {
     z-index: 1020;
   }
 }
+
+
 @media (min-width: 1200px) {
   .sticky-xl-top {
     position: sticky;
@@ -6264,6 +6279,10 @@ textarea.form-control-lg {
     z-index: 1020;
   }
 }
+
+
+
+
 @media (min-width: 1400px) {
   .sticky-xxl-top {
     position: sticky;
@@ -11224,7 +11243,7 @@ a {
   text-decoration: underline;
 }
 a:hover {
-  color: #15967d;
+  color: #E26961;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -12469,7 +12488,7 @@ progress {
 
   .col-lg-8 {
     flex: 0 0 auto;
-    width: 66.66666667%;
+    width: 100%;
   }
 
   .col-lg-9 {
@@ -16408,6 +16427,13 @@ textarea.form-control-lg {
     max-width: 1140px;
   }
 }
+
+/* 1200엑스크기연습 */
+@media (min-width: 1200px){
+  .btn-close {right:calc((100% - 1140px)/2 + 20px) ;}
+}
+/* 1200엑스크기연습 */
+
 .modal-fullscreen {
   width: 100vw;
   max-width: none;
@@ -18010,7 +18036,7 @@ textarea.form-control-lg {
 }
 
 .mb-0 {
-  margin-bottom: 50PX !important;
+  margin-bottom: 0PX !important;
 }
 
 .mb-1 {
@@ -22094,13 +22120,18 @@ html {
   font-size: 2.25rem;
   line-height: 2rem;
 }
+/* 상세페이지 타이틀 변경 */
 @media (min-width: 992px) {
   .portfolio-modal .portfolio-modal-title {
-    font-size: 3rem;
-    line-height: 2.5rem;
+    font-size: 1.2rem;
+    line-height: 2.5rem;    
+    text-align: left;    
+    font-weight: bold;
+    font-family: '고딕';
+    
   }
 }
-
+/* 상세페이지 타이틀 변경 */
 .footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -22549,15 +22580,25 @@ transform: translate(-45px, 20px);}
 }
 
 
-/* 즐겨찾기 */
+/* 즐겨찾기
 .transition-bio {position: relative; right: 30px; background-color: red;width: 130px; height: 30px;}
-.book {position: absolute; width: 30px; overflow: hidden;background-color: red;height: 40px;
-  background: var(--bs-yellow)}
-.book img {object-fit: cover;}  
+.book {position: absolute; width: 30px; overflow: hidden;;height: 40px;background: transparent !important;
+ }
+.book img {width: 30px;transform: translate(1px, -10px);}   */
 
 /* 팝업 링크 걸어보기 */
 
-.linkpop {display: none;}
-.snip1200:hover .linkpop{display: block;}
-.snip1200 .linkpop:hover .rink1 img {opacity: 1.0;width: 2PX !important;z-index: 999999999;transform: translate(30PX,50PX);transform: scale(1.2)}
+.linkpop {display: none;width: 50px; height: 50px;background:url(../images/rink3.png) no-repeat center; transform: translate(200%,150%);}
 
+
+.snip1200:hover .linkpop
+{display: block;
+  transition: all 0.3s ease-in-out}
+.snip1200 .linkpop:hover{
+  background:url(../images/rink3-1.png) no-repeat center
+  
+}
+
+
+
+/* 음악테스트 */
