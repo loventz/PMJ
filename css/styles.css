@@ -22205,13 +22205,14 @@ figure.snip1200 h2:nth-child(1) {
   text-align: center;
   width: auto;
   text-transform: uppercase;
-  font-weight: 800;
+  font-weight: 400;
   color: white;
   text-shadow:
   -1px -1px 0 #d3d3d3,
   1px -1px 0 #d3d3d3,
   -1px 1px 0 #d3d3d3,
   1px 1px 0 #d3d3d3;  
+  font-size: 1.7rem;
 }
 figure.snip1200 h2:nth-child(2) {
   display: none;
