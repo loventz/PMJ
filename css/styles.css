@@ -22207,7 +22207,7 @@ figure.snip1200 h2:nth-child(1) {
   text-transform: uppercase;
   font-weight: 700;
   color: white;
-  text-shadow: 0 0 3px rgba(0, 0, 0, 50%)
+  text-shadow: 0 0 3px rgba(0 0 0 / 50%);
    
   font-size: 1.7rem;
 }
